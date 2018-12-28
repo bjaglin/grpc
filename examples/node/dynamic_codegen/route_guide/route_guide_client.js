@@ -128,6 +128,7 @@ function runRecordRoute(callback) {
       console.log('Passed', stats.feature_count, 'features');
       console.log('Travelled', stats.distance, 'meters');
       console.log('It took', stats.elapsed_time, 'seconds');
+      console.log('Frequency', stats.frequency);
       callback();
     });
     /**

@@ -161,6 +161,7 @@ function recordRoute(call, callback) {
     summary.setDistance(distance|0);
     // End the timer
     summary.setElapsedTime(process.hrtime(start_time)[0]);
+    summary.setFrequency(proto.routeguide.RouteSummary.Frequency.FREQUENCY_YEAR)
     callback(null, summary);
   });
 }

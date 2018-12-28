@@ -170,7 +170,8 @@ function recordRoute(call, callback) {
       // Cast the distance to an integer
       distance: distance|0,
       // End the timer
-      elapsed_time: process.hrtime(start_time)[0]
+      elapsed_time: process.hrtime(start_time)[0],
+      frequency: "FREQUENCY_YEAR"
     });
   });
 }
